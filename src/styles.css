@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import 'assets/css/dexterity.mtheme.css';
+
+body {
+    background-color: #038C73;
+}
+
+h1 {
+    margin-bottom: 1vh;
+    font-size: 22px;
+    font-weight: 700;
+}

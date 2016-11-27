@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<div class="view-wrapper">
+  <md-card class="header-card">
+    <header class="header-card__header">
+      <div class="header-card__header__logo">
+        <img alt="Brand De Louis Walker" src="assets/img/lw-logo.png" />
+      </div>
+
+      <div class="header-card__header__title">
+        <h1>Louis Walker</h1>
+
+        <md-card-subtitle>Web Development &amp; Donuts</md-card-subtitle>
+      </div>
+
+      <ul class="header-card__header__social">
+        <li *ngFor="let profile of socialProfiles"
+          [attr.class]="'social-icon social-icon--' + profile.shortName"
+        ></li>
+      </ul>
+    </header>
+
+    <md-tab-group [selectedIndex]="0">
+      <md-tab label="Projects"></md-tab>
+
+      <md-tab label="About"></md-tab>
+
+      <md-tab label="Contact"></md-tab>
+    </md-tab-group>
+  </md-card>
+</div>
