@@ -1,14 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { ProjectService } from './project.service';
+
+import { FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [ ProjectService ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   private socialProfiles: Array<Object> = [];
+  private projects: any;
 
-  constructor() {
+  constructor(
+    private $p: ProjectService
+  ) {
     this.socialProfiles = [
       {
         shortName: "facebook",
@@ -31,5 +39,14 @@ export class AppComponent {
         href: "github.com/Louis-Walker"
       },
     ];
+  }
+
+  ngOnInit() {
+    this.getProjects()
+      .subscribe( projects => this.projects = projects );
+  }
+
+  getProjects(): FirebaseListObservable<Object[]> {
+    return this.$p.getProjects();
   }
 }

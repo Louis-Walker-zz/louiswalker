@@ -17,13 +17,23 @@
         ></li>
       </ul>
     </header>
-
-    <md-tab-group [selectedIndex]="0">
-      <md-tab label="Projects"></md-tab>
-
-      <md-tab label="About"></md-tab>
-
-      <md-tab label="Contact"></md-tab>
-    </md-tab-group>
   </md-card>
+
+  <ul class="project-card">
+    <md-card *ngFor="let project of projects">
+      <header>
+        <h3>{{project.name}}</h3>
+
+        <ul>
+          <li *ngFor="let tech of project.technologies">
+            <img [attr.alt]="name" [attr.src]="'assets/img/' + tech.name + '.png'">
+          </li>
+        </ul>
+      </header>
+
+      <div>
+        {{project.description}}
+      </div>
+    </md-card>
+  </ul>
 </div>
