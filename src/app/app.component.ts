@@ -49,4 +49,9 @@ export class AppComponent implements OnInit {
   getProjects(): FirebaseListObservable<Object[]> {
     return this.$p.getProjects();
   }
+
+  // Button to anchor polyfill fix for anchor tag not taking Material styles
+  navigateTo( url ): void {
+    window.location.href = url;
+  }
 }

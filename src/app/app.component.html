@@ -32,7 +32,9 @@
         </li>
       </ul>
 
-      <button md-raised-button color="primary">View</button>
+      <button md-raised-button color="primary"
+        (click)="navigateTo('http://' + project.url)"
+      >View</button>
     </md-card>
   </ul>
 </div>
