@@ -21,19 +21,18 @@
 
   <ul class="project-card">
     <md-card *ngFor="let project of projects">
-      <header>
-        <h3>{{project.name}}</h3>
+      <md-card-header>
+        <md-card-title>{{project.name}}</md-card-title> 
+        <md-card-subtitle>{{project.description}}</md-card-subtitle>
+      </md-card-header>
 
-        <ul>
-          <li *ngFor="let tech of project.technologies">
-            <img [attr.alt]="name" [attr.src]="'assets/img/' + tech + '.png'">
-          </li>
-        </ul>
-      </header>
+      <ul class="tech-list">
+        <li *ngFor="let tech of project.technologies">
+          <img [attr.alt]="name" [attr.src]="'assets/img/' + tech + '.png'">
+        </li>
+      </ul>
 
-      <div>
-        {{project.description}}
-      </div>
+      <button md-raised-button color="primary">View</button>
     </md-card>
   </ul>
 </div>

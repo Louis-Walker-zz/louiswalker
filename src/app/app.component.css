@@ -45,6 +45,34 @@
     background-color: black;
 }
 
+.project-card md-card {
+    display: flex;
+    padding: 14px 24px;
+}
+
+.project-card md-card md-card-header {
+    margin-bottom: 0;
+}
+
+.project-card md-card button {
+    height: 38px;
+}
+
+.tech-list {
+    display: flex;
+    margin: 0 1% 0 auto;
+}
+
+.tech-list li {
+    margin-left: 4px;
+}
+
+.tech-list li img {
+    width: 26px;
+    height: auto;
+    margin-top: 7px;
+}
+
 @media (max-width: 420px) {
     .header-card__header__social {
         margin-left: 6%;
