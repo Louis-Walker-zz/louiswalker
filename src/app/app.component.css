@@ -55,6 +55,7 @@
 
 .project-card md-card {
     display: flex;
+    margin-bottom: 1vw;
     padding: 14px 24px;
 }
 
