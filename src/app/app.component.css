@@ -33,16 +33,24 @@
 
 .header-card__header__social {
     display: flex;
-    min-width: 120px;
     margin-left: auto;
     padding-top: 6px;
 }
 
 .header-card__header__social li {
-    width: 22px;
-    height: 22px;
-    margin-right: 4%;
-    background-color: black;
+    width: 24px;
+    height: 24px;
+    margin-left: .5vw;
+}
+
+.header-card__header__social li a {
+    font-size: 24px;
+    color: #673ab7;
+    text-decoration: none;
+}
+
+.header-card__header__social li a:hover {
+    opacity: .6;
 }
 
 .project-card md-card {

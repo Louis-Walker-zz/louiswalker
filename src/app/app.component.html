@@ -12,9 +12,11 @@
       </div>
 
       <ul class="header-card__header__social">
-        <li *ngFor="let profile of socialProfiles"
-          [attr.class]="'social-icon social-icon--' + profile.shortName"
-        ></li>
+        <li *ngFor="let profile of socialProfiles">
+          <a [attr.class]="'found-' + profile.shortName + '-square'"
+            [attr.href]="'http://' + profile.href"
+          ></a>
+        </li>
       </ul>
     </header>
   </md-card>
