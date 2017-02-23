@@ -1,0 +1,83 @@
+header {
+    width: 100%;
+    margin: 8vh 0 4vh 0;
+}
+
+h1 {
+    font: 900 42px Code Pro;
+    color: white;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    width: 8%;
+    min-width: 30px;
+    height: 3px;
+    margin: 1vh auto 0;
+    background-color: white;
+}
+
+.subtitle {
+    width: 40%;
+    max-width: 600px;
+    min-width: 240px;
+    margin: 3vh auto 0;
+    padding: .6vw;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .1);
+    font: 16px Code Pro;
+    color: white;
+    text-align: center;
+}
+
+.social-profiles {
+    display: flex;
+    width: 100%;
+    min-width: 300px;
+    margin: 2vh auto;
+}
+
+.social-profiles li {
+    width: 94px;
+    height: 94px;
+    margin: 2vh auto;
+    overflow: hidden;
+}
+
+a[class*=social-] {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 0 0 rgba(255, 255, 255, .1);
+    font: 600 12px Code Pro;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: box-shadow .6s;
+}
+
+a[class*=social-]:hover {
+    box-shadow: inset -94px -94px 0 0 rgba(255, 255, 255, .1);
+}
+
+.social-profiles li a[href*=facebook] {
+    background-color: #3b5998;
+}
+
+.social-profiles li a[href*=twitter] {
+    background-color: #0084b4;
+}
+
+.social-profiles li a[href*=linkedin] {
+    background-color: #0077B5;
+}
+
+.social-profiles li a[href*=github] {
+    background-color: #333;
+}

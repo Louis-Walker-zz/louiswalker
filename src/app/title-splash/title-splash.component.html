@@ -1,0 +1,11 @@
+<header>
+  <h1>Louis Walker</h1>
+
+  <h2 class="subtitle">{{subtitle}}</h2>
+
+  <ul class="social-profiles">
+    <li *ngFor="let socialProfile of socialProfiles">
+      <a [class]="'social-' + socialProfile.shortName" [href]="'https://' + socialProfile.href">{{socialProfile.brandName}}</a>
+    </li>
+  </ul>
+</header>

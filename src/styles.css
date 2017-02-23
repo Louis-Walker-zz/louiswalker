@@ -3,13 +3,16 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
 @import url("https://file.myfontastic.com/MUPaBZyxjmCATKngUmH8pN/icons.css");
 @import 'assets/css/dexterity.mtheme.css';
+@import 'assets/fonts/fonts.css';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
 
 body {
     background-color: #038C73;
-}
-
-h1 {
-    margin-bottom: 1vh;
-    font-size: 22px;
-    font-weight: 700;
 }

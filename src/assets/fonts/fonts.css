@@ -1,0 +1,8 @@
+@font-face{ 
+	font-family: 'Code Pro';
+	src: url('Code_Pro_Demo-webfont.eot');
+	src: url('Code_Pro_Demo-webfont.eot?iefix') format('eot'),
+	     url('Code_Pro_Demo-webfont.woff') format('woff'),
+	     url('Code_Pro_Demo-webfont.ttf') format('truetype'),
+	     url('Code_Pro_Demo-webfont.svg#Code_Pro_Demo-webfont') format('svg');
+}
