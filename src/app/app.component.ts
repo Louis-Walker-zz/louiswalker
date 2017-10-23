@@ -56,8 +56,6 @@ export class AppComponent implements OnInit {
         quote.author = data.title;
         quote.content = he.decode(data.content).slice(3).slice(0, -5);
 
-        console.log(quote);
-
         return quote;
       });
   }
